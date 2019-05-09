@@ -132,7 +132,8 @@ return game_hash[:away][:players][name][:points]
 end
 end
 end
-
+end 
+end
 
 
 
