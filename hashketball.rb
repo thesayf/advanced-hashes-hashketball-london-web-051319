@@ -135,6 +135,16 @@ end
 end 
 
 
+ def player_numbers(team_name)
+  if team_name == game_hash[:home][:team_name]
+  return game_hash[:home][:colors]
+  end 
+  if team_name == game_hash[:away][:team_name]
+  return game_hash[:away][:colors]
+  end
+  end
+
+
 
 
 
