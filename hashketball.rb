@@ -184,7 +184,7 @@ team == game_hash[:home][:team_name] ? final_h : final_a
 
 end
 
- def player_stats(name)
+def player_stats(name)
   game_hash[:home][:players].keys.each do |named|
   if name == named
   return game_hash[:home][:players][name]
