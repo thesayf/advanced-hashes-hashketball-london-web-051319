@@ -190,7 +190,30 @@ end
   end
   end
   
+def big_shoe_rebounds
+home_players = game_hash[:home][:players].keys 
+away_players = game_hash[:away][:players].keys
 
+home_shoes = []
+home_players.each do |player|
+home_shoes << game_hash[:home][:players][player][:shoe]
+end
+
+away_shoes = []
+away_players.each do |player|
+away_shoes << game_hash[:away][:players][player][:shoe]
+end
+
+all_shoes = home_shoes + away_shoes
+biggest_size = all_shoes.max
+
+home_players.each do |player|
+if game_hash[:home][:players][player][:shoe] == biggest_size
+return game_hash[:home][:players][player][:rebounds]
+end
+
+end
+end
 
 
 
