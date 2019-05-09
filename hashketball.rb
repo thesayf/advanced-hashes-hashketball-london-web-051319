@@ -121,18 +121,18 @@ def game_hash
 
 end 
 
-# def num_points_scored(name)
-# game_hash[:home][:players].keys.each do |named|
-# if name == named
-# return game_hash[:home][:players][name][:points]
-# end 
-# game_hash[:away][:players].keys.each do |named|
-# if name == named
-# return game_hash[:away][:players][name][:points]
-# end
-# end
-# end
-# end
+def num_points_scored(name)
+game_hash[:home][:players].keys.each do |named|
+if name == named
+return game_hash[:home][:players][name][:points]
+end 
+game_hash[:away][:players].keys.each do |named|
+if name == named
+return game_hash[:away][:players][name][:points]
+end
+end
+end
+end
 
 
 
