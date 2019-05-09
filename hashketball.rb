@@ -143,7 +143,7 @@ end
   end
   end
   
-    def shoe_size(name)
+  def shoe_size(name)
   game_hash[:home][:players].keys.each do |named|
   if name == named
   return game_hash[:home][:players][name][:shoe]
