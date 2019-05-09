@@ -168,7 +168,21 @@ end
   end
 
 
+def player_numbers(team)
+home_players = game_hash[:home][:players].keys 
+away_players = game_hash[:away][:players].keys
 
+final_h = home_players.collect do |player|
+game_hash[:home][:players][player][:number]
+end
+
+final_a = away_players.collect do |player|
+game_hash[:away][:players][player][:number]
+end
+
+team == game_hash[:home][:team_name] ? final_h : final_a
+
+end
 
 
 
