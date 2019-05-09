@@ -215,5 +215,17 @@ end
 end
 end
 
+def team_names
+ final_names = []
+
+  home_teams = game_hash[:home][:team_name]
+  away_teams = game_hash[:away][:team_name]
+  
+  final_names.push(away_teams)
+  final_names.push(home_teams)
+
+ final_names
+  
+  end
 
 
