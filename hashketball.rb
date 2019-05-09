@@ -186,7 +186,7 @@ end
   return game_hash[:away][:players][name]
   end
   end
-  # game_hash[:away][:players].keys
+
   end
   end
   
