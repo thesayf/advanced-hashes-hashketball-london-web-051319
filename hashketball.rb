@@ -150,7 +150,7 @@ end
   end 
   game_hash[:away][:players].keys.each do |named|
   if name == named
-  return game_hash[:away][:players][name][:shoe ]
+  return game_hash[:away][:players][name][:shoe]
   end
   end
   # game_hash[:away][:players].keys
